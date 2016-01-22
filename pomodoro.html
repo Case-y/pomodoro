@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body ng-app="pomodoro">
+  <!-- Front Page -->
+  <div class="intro">
+    <div class="banner">
+    <h2 class="introduction"> Here is a Pomodoro Clock created by Casey! </br>
+        You can also contact him at <a href=#> kaze@berkeley.edu </a> </h2>
+      <hr class="side"></hr>
+    </div>
+ </div>
+
+  <div class = "front-page">
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="containe">
+    <div class="circle-content">
+        <div class="circle">
+      <h2 class="c1">Break Time</h2>
+          <div class="container">
+          <div class="row">
+           <button type="button" class = "subtract bs"> - </button>
+            <button type="button" class = "add ba"> + </button>
+          </div>
+          </div>
+          </br>
+          <h1 class="breaktime"> 5
+          </h1> 
+      </div>
+    </div>
+    <div class="circle-content circletwo">
+        <div class="circle" ng-controller="clock">
+      <h2 class="c2">Time</h2>
+          <div class = "button-area">
+        <button type="button" class = "btn btn-default st" ng-click="startTime()" ng-disabled ="disabled"> Start </button>
+          </div>
+          </br>
+           <div>
+              <h1 class="starttime">{{ timeLeft | runningtime }}</h1>
+             <h2 class="mode"> Case</h2>
+           </div>
+       </div>
+    </div>
+    <div class="circle-content">
+        <div class="circle">
+      <h2 class="c3">Session Time</h2>
+      <div class="container">
+          <div class="row">
+           <button type="button" class = "subtract ss"> - </button>
+            <button type="button" class = "add sa"> + </button>
+          </div>
+          </div>
+          </br>
+          <h1 class="sessiontime"> 25 </h1> 
+      </div>
+    </div>
+          
+      </div>        
+    
+</div>
+    
+ </div>
+</div>
+</body>
+</html>
