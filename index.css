@@ -84,6 +84,7 @@ body {
 .containe {
     width: 100%;  
     display: flex;
+    justify-content: space-around;
 }
 
 .container {
